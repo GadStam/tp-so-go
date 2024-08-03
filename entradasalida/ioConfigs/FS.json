@@ -1,0 +1,16 @@
+{
+    "port": 8092,
+    "type": "DialFS",
+    "unit_work_time": 2000,
+    "ip_kernel": "localhost",
+    "port_kernel": 8080,
+    "ip_memory": "localhost",
+    "port_memory": 8085,
+    "dialfs_path": "/home/utnso/tp-2024-1c-Panza_confianza/entradasalida",
+    "dialfs_block_size": 16,
+    "dialfs_block_count": 32
+}
+
+
+
+

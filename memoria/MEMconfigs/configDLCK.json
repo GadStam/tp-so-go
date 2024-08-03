@@ -1,0 +1,12 @@
+{
+    "port": 8085,
+    "memory_size": 1024,
+    "port_cpu": 8075,
+    "port_kernel": 8080,
+    "ip_cpu": "localhost",
+    "ip_kernel": "localhost",
+    "ip_entradasalida": "localhost",
+    "page_size": 32,
+    "instructions_path": "C:/Users/user/Desktop/instruccionesPruebas",
+    "delay_response": 1000
+}

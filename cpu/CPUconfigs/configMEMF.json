@@ -1,0 +1,10 @@
+{
+    "port": 8075,
+    "ip_kernel": "localhost",
+    "ip_memory": "localhost",
+    "port_memory": 8085,
+    "port_kernel": 8080,
+    "number_felling_tlb": 4,
+    "algorithm_tlb": "FIFO"
+}
+

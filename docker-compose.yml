@@ -1,0 +1,30 @@
+# TODO: agregar archivos de configs a los entrypoint para que levante 
+
+services:
+  memoria:
+    image: "memoria"
+    build: .
+    ports:
+      - "8085:8085"
+    entrypoint: /bin/bash -c "/bin/bash -c \"cd memoria && go run memoria.go dev 'config/config_plani.json'\""
+  cpu:
+    image: "cpu"
+    build: .
+    ports:
+      - "8075:8075"
+    entrypoint: /bin/bash -c "/bin/bash -c \"cd cpu && go run cpu.go dev 'config/config_plani.json'\""
+  kernel:
+    image: "kernel"
+    build: .
+    ports:
+      - "8080:8080"
+    entrypoint: /bin/bash -c "/bin/bash -c \"cd kernel && go run kernel.go dev ./'config/config_plani_fifo.json'\""
+  io:
+    image: "entradasalida"
+    build: .
+    depends_on:
+      - kernel
+    ports:
+      - "8090:8090"
+      - "8091:8091"
+    entrypoint: /bin/bash -c "/bin/bash -c \"cd entradasalida && go run entradasalida.go dev 'SLP1' ./'config/config_slp1.json'\""

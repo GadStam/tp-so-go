@@ -1,0 +1,12 @@
+{
+    "port": 8091,
+    "type": "GENERICA",
+    "unit_work_time": 500,
+    "ip_kernel": "localhost",
+    "port_kernel": 8080,
+    "ip_memory": "localhost",
+    "port_memory": 8085,
+    "dialfs_path": "/home/utnso/dialfs",
+    "dialfs_block_size": 64,
+    "dialfs_block_count": 1024
+}

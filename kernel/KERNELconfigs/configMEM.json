@@ -1,0 +1,13 @@
+{
+    "port": 8080,
+    "ip_memory": "localhost",
+    "ip_entradasalida": "localhost",
+    "ip_cpu": "localhost",
+    "port_memory": 8085,
+    "port_cpu": 8075,
+    "planning_algorithm": "FIFO",
+    "quantum": 2000,
+    "resources": ["RECURSO"],
+    "resource_instances": [1],
+    "multiprogramming": 10 
+}
